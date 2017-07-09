@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="614.0" prefWidth="916.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AdminController">
+   <top>
+      <VBox prefHeight="100.0" prefWidth="672.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="74.0" prefWidth="480.0">
+               <children>
+                  <Button fx:id="startServerButton" mnemonicParsing="false" onAction="#onStartServer" prefHeight="34.0" prefWidth="103.0" text="Start Server">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="stopServerButton" mnemonicParsing="false" onAction="#onStopServer" prefHeight="34.0" prefWidth="103.0" text="Stop Server">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="configButton" mnemonicParsing="false" onAction="#onConfig" prefHeight="34.0" prefWidth="103.0" text="config">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="killSessionButton" mnemonicParsing="false" onAction="#onKillSession" prefHeight="34.0" prefWidth="103.0" text="kill session">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="connectionDetailsButton" mnemonicParsing="false" onAction="#onConnectionDetails" prefHeight="34.0" prefWidth="125.0" text="Connection Details">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Label prefHeight="43.0" prefWidth="191.0" text="Welcome, Admin!" textFill="#286b86">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox prefHeight="187.0" prefWidth="403.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+         </BorderPane.margin>
+         <children>
+            <HBox prefHeight="222.0" prefWidth="534.0">
+               <children>
+                  <VBox prefHeight="222.0" prefWidth="435.0">
+                     <children>
+                        <Label prefHeight="29.0" prefWidth="449.0" text="Active Tasks - " textFill="#3eaad6">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <ListView fx:id="listView" prefHeight="194.0" prefWidth="528.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="210.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="146.0">
+               <VBox.margin>
+                  <Insets right="10.0" top="50.0" />
+               </VBox.margin>
+               <children>
+                  <Label text="Activity Log" textFill="#3eaad6">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="activityLog" prefHeight="293.0" prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </TextArea>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </right>
+</BorderPane>
