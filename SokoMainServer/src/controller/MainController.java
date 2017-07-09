@@ -19,7 +19,13 @@ import model.ISSModel;
 import server.Protocol;
 import sokoban_utils.SokoUtil;
 import view.ViewModel;
-
+/**
+ * The main Controller of the server.
+ * Based on Command pattern.
+ * The Controller speaks with the ViewModel and The Model Facade.
+ * @author Isan Rivkin and Daniel Hake.
+ *
+ */
 public class MainController implements FController,Observer 
 {
 	private ISSModel model;
@@ -39,6 +45,9 @@ public class MainController implements FController,Observer
 		this.keepRunning=true;
 		initCommandsMap();
 	}
+	/**
+	 * All possible commands.
+	 */
 	private void initCommandsMap()
 	{
 		this.create_cmd=new HashMap<String,Command>();

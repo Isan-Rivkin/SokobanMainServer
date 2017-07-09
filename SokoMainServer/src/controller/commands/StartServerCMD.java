@@ -4,7 +4,11 @@ import java.util.LinkedList;
 
 import model.ISSModel;
 import server.SokoMultiServer;
-
+/**
+ * Run the server.
+ * @author Isan Rivkin and Daniel Hake.
+ *
+ */
 public class StartServerCMD implements Command
 {
 

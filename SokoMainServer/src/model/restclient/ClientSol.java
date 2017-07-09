@@ -8,7 +8,11 @@ import javax.ws.rs.core.Response;
 
 import metadata.SolutionModel;
 
-
+/**
+ * Rest client implementations.
+ * @author Isan Rivkin
+ *
+ */
 public class ClientSol 
 {
     public String levelEncoded;

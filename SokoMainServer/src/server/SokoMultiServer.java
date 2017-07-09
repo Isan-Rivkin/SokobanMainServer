@@ -6,7 +6,13 @@ import java.net.Socket;
 import java.net.SocketTimeoutException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
+/**
+ * Sokoban Multi Server
+ * @author Isan Rivkin and Daniel Hake
+ *  Uses -> needs a thread numbers limit for the thread pool
+ *  Dont know anything about session managment.
+ *  Listens for a connections and pass it to the session manager.
+ */
 public class SokoMultiServer 
 {
 	private int port;

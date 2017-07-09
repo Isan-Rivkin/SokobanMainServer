@@ -8,7 +8,11 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
-
+/**
+ * IDM Mapper implementation.
+ * @author Isan Rivkin and Daniel Hake.3
+ *
+ */
 public class SokoDBMapper implements IDBMapper 
 {
 
@@ -23,7 +27,6 @@ public class SokoDBMapper implements IDBMapper
 		config.configure();
 		factory = config.buildSessionFactory();
 	}
-	
 	@Override
 	public List<HighScoreP> searchHighScore(IQuery query)
 	{

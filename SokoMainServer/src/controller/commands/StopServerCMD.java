@@ -5,7 +5,11 @@ import java.util.LinkedList;
 import model.ISSModel;
 import server.SessionManager;
 import server.SokoMultiServer;
-
+/**
+ * stop the server.
+ * @author Isan Rivkin and Daniel Hake.
+ *
+ */
 public class StopServerCMD implements Command
 {
 

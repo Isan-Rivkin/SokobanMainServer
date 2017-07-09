@@ -13,7 +13,11 @@ import model.tasks.TaskManager;
 import server.Session;
 import server.SessionManager;
 import view.ViewModel;
-
+/**
+ * Create a new session/task update to whom it may be relevant.
+ * @author Isan Rivkin
+ *
+ */
 public class NewTaskAndSessionCreatedCMD implements Command
 {
 

@@ -6,7 +6,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
+/**
+ * A DB player persistent object.
+ * @author Isan Rivkin and Daniel Hake.
+ *
+ */
 @Entity(name = "Players")
 @Table(name="Players", catalog="SokobanDB", schema="DBO")
 public class PlayerP implements POJO

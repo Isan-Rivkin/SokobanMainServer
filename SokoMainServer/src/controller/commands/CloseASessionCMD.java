@@ -4,7 +4,11 @@ import java.util.LinkedList;
 
 import model.ISSModel;
 import server.SessionManager;
-
+/**
+ * Close an active session (session manager)
+ * @author Isan Rivkin and Daniel Hake.
+ *
+ */
 public class CloseASessionCMD implements Command
 {
 

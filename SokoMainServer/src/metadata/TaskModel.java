@@ -3,7 +3,11 @@ package metadata;
 import java.io.Serializable;
 
 import model.restclient.RestClient;
-
+/**
+ * Serialized model to json and oposite of ITask.
+ * @author Isan Rivkin and Daniel Hake.
+ *
+ */
 public class TaskModel implements Serializable
 {
 	private String sessionID;

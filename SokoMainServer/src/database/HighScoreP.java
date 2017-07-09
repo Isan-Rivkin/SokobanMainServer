@@ -9,7 +9,11 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
-
+/**
+ * Highscores row in a table.
+ * @author Isan Rivkin and Daniel Hake.
+ *
+ */
 @Entity(name = "HighScores")
 @Table(name="HighScores", catalog="SokobanDB", schema="DBO")
 public class HighScoreP implements POJO

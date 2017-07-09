@@ -5,7 +5,11 @@ import java.util.List;
 import model.database.HighScoreP;
 import model.database.HighScoreQuery;
 import model.database.IQuery;
-
+/**
+ * 
+ * @author Isan Rivkin and Daniel Hake
+ *	Protocol specifing important details for commands and connection protocol.
+ */
 public class Protocol
 {
 	/************************

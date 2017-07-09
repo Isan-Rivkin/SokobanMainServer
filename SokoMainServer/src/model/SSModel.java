@@ -12,7 +12,12 @@ import server.Protocol;
 import server.SessionManager;
 import server.SokoMultiServer;
 import solver.MainSolver;
-
+/**
+ * Main Model working as bundle mostly for other components.
+ * Interracts with the controller.
+ * @author Isan Rivkin and Daniel Hake
+ *
+ */
 public class SSModel extends Observable implements ISSModel
 {
 	private SessionManager sm;

@@ -12,7 +12,13 @@ import javafx.beans.property.StringProperty;
 import metadata.SessionModel;
 import metadata.TaskModel;
 import server.Protocol;
-
+/**
+ * 
+ * @author Isan Rivkin and Daniel Hake
+ *	View Model for the controller.
+ *	Some data from the Admin controller is binded to here
+ *
+ */
 public class SokoViewModel extends Observable implements ViewModel
 {
 

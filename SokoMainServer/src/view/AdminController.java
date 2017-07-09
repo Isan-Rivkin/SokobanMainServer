@@ -34,7 +34,18 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 import javafx.util.Pair;
 import server.Protocol;
-
+/**
+ * 
+ * @author Isan Rivkin and Daniel Hake
+ * This class is the gui logic for the server.
+ * Admin will be able to see all sessions 
+ * Admin see all tasks.
+ * Admin see the general connections log aggrigating.
+ * Admin can kill a session
+ * Admin can set a port and max connections number
+ * MUST CLICK start server
+ *
+ */
 public class AdminController extends Observable implements Initializable
 {
 	// non javafax 

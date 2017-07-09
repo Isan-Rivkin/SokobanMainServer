@@ -12,9 +12,20 @@ import com.google.gson.GsonBuilder;
 import metadata.SolutionModel;
 import metadata.SolutionQuery;
 import server.Protocol;
-
+/**
+ * A client requester class
+ * Handles REST request for level solutions.
+ * @author Isan Rivkin
+ *
+ */
 public class RESTRequester
 {
+	/**
+	 * Get a solution from the web service.
+	 * @param domain - the service domain.
+	 * @param levelMapKey - compressed level.
+	 * @return solution encoded.
+	 */
 	public static String getLevelSolutionModel(String domain,String levelMapKey)
 	{
 		GsonBuilder b = new GsonBuilder();
@@ -30,6 +41,12 @@ public class RESTRequester
 		String solutionJson = response.readEntity(String.class);
 		return solutionJson;
 	}
+	/**
+	 * Post a new solution to the database.
+	 * @param domain - webservice domain.
+	 * @param solutionModel - the model to store.
+	 * @return - confirmation.
+	 */
 	//http://localhost:8080/SokoREST/updateSolver/get/{jsonSolution}
 	public static String postLevelSolutionModel(String domain,SolutionModel solutionModel)
 	{

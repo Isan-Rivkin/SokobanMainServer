@@ -3,7 +3,12 @@ package controller.commands;
 import java.util.LinkedList;
 
 import view.ViewModel;
-
+/**
+ * Add an action to the log presented in the view model.
+ * aggrigating.
+ * @author Isan Rivkin and Daniel Hake.
+ *
+ */
 public class LogUpdateCMD implements Command
 {
 

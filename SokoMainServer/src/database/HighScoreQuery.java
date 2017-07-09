@@ -1,5 +1,9 @@
 package database;
-
+/**
+ * HighScores query for a table.
+ * @author Isan Rivkin and Daniel Hake.
+ *
+ */
 public class HighScoreQuery implements IQuery
 {
 

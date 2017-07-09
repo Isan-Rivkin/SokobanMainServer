@@ -6,7 +6,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
+/**
+ * A Level persistent object.
+ * @author Isan Rivkin and Daniel Hake.
+ *
+ */
 @Entity (name = "Levels")
 @Table(name="Levels", catalog="SokobanDB", schema="DBO")
 public class LevelP implements POJO 

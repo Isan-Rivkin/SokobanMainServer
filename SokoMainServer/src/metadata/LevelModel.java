@@ -1,7 +1,11 @@
 package metadata;
 
 import java.io.Serializable;
-
+/**
+ * A actual sokoban level JSON serialized model.
+ * @author Isan Rivkin
+ *
+ */
 public class LevelModel implements Serializable  
 {
 	private char[][] map;

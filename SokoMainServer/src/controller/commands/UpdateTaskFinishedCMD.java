@@ -11,7 +11,11 @@ import model.tasks.ITask;
 import model.tasks.SokoTask;
 import server.SessionManager;
 import view.ViewModel;
-
+/**
+ * Update that a task has been finished to whom it may be interesting.
+ * @author Isan Rivkin
+ *
+ */
 public class UpdateTaskFinishedCMD implements Command
 {
 	private ISSModel model;

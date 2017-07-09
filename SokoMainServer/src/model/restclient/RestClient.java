@@ -32,7 +32,12 @@ import searchable.Action;
 import searchable.Solution;
 import server.Protocol;
 import solver.MainSolver;
-
+/**
+ * IRestClient implementation.
+ * used by the ITask class to execute client requests.
+ * @author Isan Rivkin and Daniel Hake
+ *
+ */
 public class RestClient extends Observable implements IRestClient,Serializable 
 {
 

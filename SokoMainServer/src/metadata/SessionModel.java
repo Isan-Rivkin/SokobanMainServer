@@ -1,7 +1,11 @@
 package metadata;
 
 import java.net.SocketAddress;
-
+/**
+ * A JSON seriallized session model.
+ * @author Isan Rivkin and Daniel Hake
+ *
+ */
 public class SessionModel 
 {
 	@Override

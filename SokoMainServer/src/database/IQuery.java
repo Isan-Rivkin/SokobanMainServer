@@ -1,5 +1,9 @@
 package database;
-
+/**
+ * A database query.
+ * @author Isan Rivkin
+ *
+ */
 public interface IQuery {
 	public String getLevelName();
 	public String getPlayerName();

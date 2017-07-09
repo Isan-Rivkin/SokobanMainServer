@@ -10,7 +10,11 @@ import model.ISSModel;
 import model.tasks.ITask;
 import model.tasks.ITaskManager;
 import model.tasks.SokoTask;
-
+/**
+ * Add a new task from a session.
+ * @author Isan Rivkin and Daniel Hake
+ *
+ */
 public class AddTaskCMD implements Command
 {
 
