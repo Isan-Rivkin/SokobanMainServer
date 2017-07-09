@@ -14,7 +14,7 @@ import java.util.concurrent.Executors;
  *  Listens for a connections and pass it to the session manager.
  */
 public class SokoMultiServer 
-{
+{//
 	private int port;
 	private int threadsLimit;
 	private ExecutorService threadPool;
